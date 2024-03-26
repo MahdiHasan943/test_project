@@ -1,0 +1,59 @@
+import React, { useState, useEffect } from "react";
+
+const Test = () => {
+  // State to hold the scale value
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scale based on the scroll position, ensuring it never goes below 1
+      // Adjust the denominator to control the sensitivity and scaling effect
+      const newScale = Math.max(1, 1 + window.scrollY / 100);
+      setScale(newScale);
+    };
+
+    // Listen for scroll events
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove the event listener
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []); // Empty dependency array means this effect runs once on mount
+
+  const imScale = 1 / scale;
+
+  return (
+    <div className="parent" style={{ transform: `scale(${scale})` }}>
+      parent - scroll to see me grow or shrink!
+      <div className="child" style={{ transform: `scale(${imScale})` }}>
+        child - stays the same size
+      </div>
+      <style jsx>{`
+        .parent {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          position: relative;
+          height: 70vh;
+          margin-left: 1%;
+          margin-right: 1%;
+          background-color: white;
+          border-radius: 20px;
+          padding-right: 4%;
+          overflow: hidden;
+          z-index: 1;
+          transition: transform 0.5s; /* Smooth transition for scaling */
+        }
+        .child {
+          border: solid 1px;
+          padding: 1em;
+          background: violet;
+          margin: 10%;
+        }
+        /* Removed hover styles */
+      `}</style>
+    </div>
+  );
+};
+
+export default Test;
