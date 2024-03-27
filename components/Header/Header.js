@@ -36,37 +36,6 @@ const Header = () => {
   const { t } = useTranslation();
   const menu = (
     <React.Fragment>
-      {/* <li
-        className="group  relative tablet:static"
-        onClick={() => {
-          // Potentially different action
-          navToggle();
-          setColor("/home");
-        }}
-      >
-        <Link
-          href={"/home"}
-          className={
-            stickyClass
-              ? `   px-8 ${
-                  color === "/home"
-                    ? " text-[#ffc107] group        text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
-                    : "text-[#fff] tablet:text-[rgb(0,0,0)] group  text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
-                }
-               } relative`
-              : `${
-                  color === "/home"
-                    ? " text-[#ffc107]         text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
-                    : "text-[#fff] group text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
-                }
-               } px-8 relative `
-          }
-        >
-          {" "}
-          {t("home")}
-        </Link>
-      </li> */}
-
       <li
         className="group  relative tablet:static"
         onClick={() => {
@@ -123,21 +92,114 @@ const Header = () => {
                 {t("Trends")}
               </Link>
             </div>
-            {/* <div className="w-full px-6 py-4">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/trends"}
-                className=" w-full  text-[#111]"
-              >
-                {t("ImageGenerator")}
-              </Link>
-            </div> */}
           </motion.div>
         </div>
       </li>
 
+      <li
+        className="group  relative tablet:static"
+        onClick={() => {
+          // Potentially different action
+          navToggle();
+          setColor("/services");
+        }}
+      >
+        <Link
+          href={"/services"}
+          className={
+            stickyClass
+              ? `   px-8 ${
+                  color === "/about"
+                    ? " text-[#ffc107] group        text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
+                    : "text-[#fff] tablet:text-[rgb(0,0,0)] group  text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
+                }
+               } relative`
+              : `${
+                  color === "/about"
+                    ? " text-[#ffc107]         text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
+                    : "text-[#fff] group text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
+                }
+               } px-8 relative `
+          }
+        >
+          {" "}
+          {t("services")}
+          <div className="absolute  flex items-center h-full top-0 right-0">
+            <BsCheck
+              className={
+                stickyClass
+                  ? " text-[#fff] tablet:text-[#000] text-[22px]"
+                  : "text-[#fff] text-[22px]"
+              }
+            />
+          </div>
+        </Link>
+        <div className="absolute group overflow-hidden z-[1000000000] min-h-[350px] py-8 top-0 tablet:top-[30px] w-[180px] hidden group-hover:block">
+          <motion.div
+            variants={textVariant2}
+            initial="hidden"
+            whileInView="show"
+            className="bg-[#fafafa] min-h-[200px] w-full    mt-auto py-4 "
+          >
+            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/webdesign"}
+                className=" w-full  text-[#111]"
+              >
+                {t("heroTitle1")}
+              </Link>
+            </div>
+            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/socialmedia"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe7t")}
+              </Link>
+            </div>
+            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/online-marketing"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe5t")}
+              </Link>
+            </div>
+            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/seo-marketing"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe8t")}
+              </Link>
+            </div>
+            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/local-marketing"}
+                className=" w-full  text-[#111]"
+              >
+                {t("localm")}
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </li>
+      {/* 
       <li
         className="group  relative tablet:static"
         onClick={() => {
@@ -167,7 +229,7 @@ const Header = () => {
           {" "}
           {t("services")}
         </Link>
-      </li>
+      </li> */}
       <li
         className="group  relative tablet:static"
         onClick={() => {
@@ -289,18 +351,6 @@ const Header = () => {
                 {t("testimonial")}
               </Link>
             </div>
-
-            {/* <div className="w-full px-6 py-4">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/trends"}
-                className=" w-full  text-[#111]"
-              >
-                {t("Trends")}
-              </Link>
-            </div> */}
           </motion.div>
         </div>
       </li>
