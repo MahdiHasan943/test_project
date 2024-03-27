@@ -30,8 +30,8 @@ const Footer = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
-          toast.success("Successfully subscribed");
+          console.log("message has been sent");
+          toast.success("Successfully subscribed ");
           form.current.reset();
         },
         (error) => {
