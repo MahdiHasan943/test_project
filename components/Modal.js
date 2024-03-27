@@ -92,7 +92,7 @@ const Modal = () => {
   const acceptCookie = () => {
     setShowConsent(false);
     setCookie("localConsent", "true", {
-      domain: ".link711.com",
+      domain: ".test-project-henna-zeta.vercel.app",
       expires: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000), // 1 year expiration
     });
   };
