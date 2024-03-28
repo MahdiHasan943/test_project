@@ -114,7 +114,7 @@ const Modal = () => {
                         : "w-full py-3 text-center outline-none text-[22px] font-medium text-[#111] hover:text-gray-700 focus:outline-none focus:border-b-[5px] focus:border focus:border-t-0 focus:border-l-0 focus:border-r-0"
                     }
                   >
-                    Zustimmung
+                    Zustimmung 
                   </Tab>
                   <Tab
                     className={({ selected }) =>

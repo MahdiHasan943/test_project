@@ -109,13 +109,13 @@ const Header = () => {
           className={
             stickyClass
               ? `   px-8 ${
-                  color === "/about"
+                  color === "/services"
                     ? " text-[#ffc107] group        text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                     : "text-[#fff] tablet:text-[rgb(0,0,0)] group  text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                 }
                } relative`
               : `${
-                  color === "/about"
+                  color === "/services"
                     ? " text-[#ffc107]         text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                     : "text-[#fff] group text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                 }
@@ -134,14 +134,14 @@ const Header = () => {
             />
           </div>
         </Link>
-        <div className="absolute group overflow-hidden z-[1000000000] min-h-[350px] py-8 top-0 tablet:top-[30px] w-[180px] hidden group-hover:block">
+        <div className="absolute group overflow-hidden z-[1000000000] h-[600px] py-8 top-0 tablet:top-[30px] w-[220px] hidden group-hover:block">
           <motion.div
-            variants={textVariant2}
-            initial="hidden"
-            whileInView="show"
-            className="bg-[#fafafa] min-h-[200px] w-full    mt-auto py-4 "
+            // variants={textVariant2}
+            // initial="hidden"
+            // whileInView="show"
+            className="bg-[#fafafa] h-[600px] w-full  mt-8  py-4 "
           >
-            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -152,7 +152,7 @@ const Header = () => {
                 {t("heroTitle1")}
               </Link>
             </div>
-            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -163,7 +163,7 @@ const Header = () => {
                 {t("afterhe7t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -174,7 +174,7 @@ const Header = () => {
                 {t("afterhe5t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -185,7 +185,7 @@ const Header = () => {
                 {t("afterhe8t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-8 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -194,6 +194,90 @@ const Header = () => {
                 className=" w-full  text-[#111]"
               >
                 {t("localm")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/search-engine-advertising-sea"}
+                className=" w-full  text-[#111]"
+              >
+                {t("searcheng")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/software-development"}
+                className=" w-full  text-[#111]"
+              >
+                {t("sofwared")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/ai-services"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe1t")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/app-development"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe2t")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/e-commerce"}
+                className=" w-full  text-[#111]"
+              >
+                {t("afterhe6t")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/web-analyse"}
+                className=" w-full  text-[#111]"
+              >
+                {t("webanalysis")}
+              </Link>
+            </div>
+
+            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+              <Link
+                onClick={() => {
+                  navToggle();
+                }}
+                href={"/services/affiliate-marketing"}
+                className=" w-full  text-[#111]"
+              >
+                {t("affilate")}
               </Link>
             </div>
           </motion.div>
