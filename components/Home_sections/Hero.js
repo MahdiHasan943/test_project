@@ -89,7 +89,7 @@ const Hero = () => {
               height={600}
               className="block  w-full tablet:hidden"
             />
-            <div className="w-full px-4 absolute top-0 left-0 h-full z-[100000] max-auto">
+            <div className="w-full px-4 absolute top-0 left-0 h-full z-[9999] max-auto">
               <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -151,7 +151,7 @@ const Hero = () => {
               className="block w-full tablet:hidden"
               alt="A group of professionals from diverse backgrounds standing together, dressed in business attire. They are smiling at the camera, projecting confidence and collaboration."
             />
-            <div className="w-full  px-4 absolute top-0 left-0 h-full z-[100000] max-auto">
+            <div className="w-full  px-4 absolute top-0 left-0 h-full z-[9999] max-auto">
               <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -213,7 +213,7 @@ const Hero = () => {
               height={600}
               className="block  w-full tablet:hidden"
             />
-            <div className="w-full  px-4 absolute top-0 left-0 h-full z-[100000] max-auto">
+            <div className="w-full  px-4 absolute top-0 left-0 h-full z-[9999] max-auto">
               <motion.div
                 variants={staggerContainer}
                 initial="hidden"

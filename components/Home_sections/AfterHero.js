@@ -34,7 +34,7 @@ const AfterHero = () => {
   };
 
   return (
-    <div className="mt-10  py-10 tablet:py-0 tablet:mt-[-100px] pb-12  tablet:px-0 z-[100000000] relative max-w-[1050px] mx-auto  ">
+    <div className="mt-10  py-10 tablet:py-0 tablet:mt-[-100px] pb-12  tablet:px-0 z-[9998] relative max-w-[1050px] mx-auto  ">
       <Swiper
         ref={swiperRef}
         watchSlidesProgress={true}
@@ -60,7 +60,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px]  min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero1.png"
@@ -83,9 +83,9 @@ const AfterHero = () => {
               variants={slideIn("up", "tween", 0.3, 1)}
               initial="hidden"
               whileInView="show"
-              className="absolute   left-0 w-full   z-50   ease-in-out duration-500  bg-[#ffc107] h-full"
+              className="absolute   left-0 w-full   z-[9998]   ease-in-out duration-500  bg-[#ffc107] h-full"
             >
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center  rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero1.png"
@@ -115,7 +115,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px]  mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero2.png"
@@ -138,9 +138,9 @@ const AfterHero = () => {
               variants={slideIn("down", "tween", 0.3, 1)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50    ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]    ease-in-out duration-500 bg-[#ffc107] h-full"
             >
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero2.png"
@@ -170,7 +170,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero3.png"
@@ -193,10 +193,10 @@ const AfterHero = () => {
               variants={slideIn("up", "tween", 0.3, 1)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50   ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]   ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero3.png"
@@ -226,7 +226,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero2.png"
@@ -249,10 +249,10 @@ const AfterHero = () => {
               variants={slideIn("down", "tween", 0.3, 1)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50  ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]  ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero2.png"
@@ -281,7 +281,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero1.png"
@@ -304,10 +304,10 @@ const AfterHero = () => {
               variants={slideIn("up", "tween", 0.3, 1)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50   ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]   ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero1.png"
@@ -336,7 +336,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero2.png"
@@ -359,10 +359,10 @@ const AfterHero = () => {
               variants={slideIn("down", "tween", 1, 2)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50  ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]  ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero2.png"
@@ -391,7 +391,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero1.png"
@@ -414,10 +414,10 @@ const AfterHero = () => {
               variants={slideIn("up", "tween", 1.4, 2)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50  ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]  ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero1.png"
@@ -447,7 +447,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero2.png"
@@ -470,10 +470,10 @@ const AfterHero = () => {
               variants={slideIn("down", "tween", 1.8, 2)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50   ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]   ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero2.png"
@@ -502,7 +502,7 @@ const AfterHero = () => {
             whileInView="show"
             className="max-w-[200px] min-h-[270px] mx-1 tablet:mx-0 overflow-hidden group relative rounded-sm shadow-lg bg-[#fff]"
           >
-            <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+            <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
               <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                 <Image
                   src="/images/batch_one/afterhero1.png"
@@ -525,10 +525,10 @@ const AfterHero = () => {
               variants={slideIn("up", "tween", 2, 2)}
               initial="hidden"
               whileInView="show"
-              className="absolute  left-0 w-full   z-50  ease-in-out duration-500 bg-[#ffc107] h-full"
+              className="absolute  left-0 w-full   z-[9998]  ease-in-out duration-500 bg-[#ffc107] h-full"
             >
               {" "}
-              <div className="max-w-[200px] min-h-[270px] gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
+              <div className="max-w-[200px] min-h-[270px] gap-6 z-[9998] absolute left-0 top-0 flex flex-col items-center justify-center">
                 <div className="w-[70px] flex justify-center items-center rounded-full h-[70px] bg-[#f4f5f8]">
                   <Image
                     src="/images/batch_one/afterhero1.png"
