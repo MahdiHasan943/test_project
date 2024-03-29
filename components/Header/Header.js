@@ -87,7 +87,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/trends"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("Trends")}
               </Link>
@@ -148,7 +148,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/webdesign"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]    focus:font-bold"
               >
                 {t("heroTitle1")}
               </Link>
@@ -159,7 +159,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/socialmedia"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe7t")}
               </Link>
@@ -170,7 +170,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/online-marketing"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe5t")}
               </Link>
@@ -181,7 +181,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/seo-marketing"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe8t")}
               </Link>
@@ -192,7 +192,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/local-marketing"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("localm")}
               </Link>
@@ -204,7 +204,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/search-engine-advertising-sea"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("searcheng")}
               </Link>
@@ -216,7 +216,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/software-development"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("sofwared")}
               </Link>
@@ -228,7 +228,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/ai-services"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe1t")}
               </Link>
@@ -240,7 +240,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/app-development"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe2t")}
               </Link>
@@ -252,7 +252,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/e-commerce"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("afterhe6t")}
               </Link>
@@ -264,7 +264,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/web-analyse"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("webanalysis")}
               </Link>
@@ -276,7 +276,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/services/affiliate-marketing"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("affilate")}
               </Link>
@@ -397,7 +397,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/about"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("About")}
               </Link>
@@ -409,7 +409,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/portfolio"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("Portfolios")}
               </Link>
@@ -420,7 +420,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/team_members"}
-                className=" w-full  text-[#111]"
+                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("TeamMembers")}
               </Link>

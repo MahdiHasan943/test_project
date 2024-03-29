@@ -45,19 +45,19 @@ const page = () => {
     console.log("Selected Option:", name);
   };
 
-  const handleCheckboxChange1 = (option, label) => {
-    setSelectedOption1(option);
-    console.log(option, label, "form");
+  const handleCheckboxChange1 = (name) => {
+    setSelectedOption1(name);
+    console.log("Selected Option:", name);
   };
 
-  const handleCheckboxChange2 = (option, label) => {
-    setSelectedOption2(option);
-    console.log(option, label, "form");
+  const handleCheckboxChange2 = (name) => {
+    setSelectedOption2(name);
+    console.log(name, "form");
   };
 
-  const handleCheckboxChange3 = (option, label) => {
-    setSelectedOption3(option);
-    console.log(option, label, "form");
+  const handleCheckboxChange3 = (name) => {
+    setSelectedOption3(name);
+    console.log(name, "form");
   };
   const [agreed, setAgreed] = useState(false);
 
@@ -739,7 +739,7 @@ const page = () => {
                               <input
                                 type="checkbox"
                                 name="within_the_next_month"
-                                value="within_the_next_month"
+                                value="within the next month"
                                 id="option2"
                                 checked={
                                   selectedOption === "Within the next month"
@@ -756,7 +756,7 @@ const page = () => {
                               <input
                                 type="checkbox"
                                 name="one_to_three_months"
-                                value="one_to_three_months"
+                                value="one to three months"
                                 id="option3"
                                 checked={selectedOption === "1-3 months"}
                                 onChange={() =>
@@ -771,7 +771,7 @@ const page = () => {
                               <input
                                 type="checkbox"
                                 name="not_sure_yet"
-                                value="not_sure_yet"
+                                value="not sure yet"
                                 id="option4"
                                 checked={selectedOption === "Not sure yet"}
                                 onChange={() =>
@@ -799,13 +799,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="similar_service"
-                              value="option3"
+                              name="Yes"
+                              value="Yes"
                               id="similar_service_yes"
                               checked={selectedOption1 === "option3"}
-                              onChange={() =>
-                                handleCheckboxChange1("option3", "Yes")
-                              }
+                              onChange={() => handleCheckboxChange1("option3")}
                             />
                             <label
                               className="text-[14px]"
@@ -818,13 +816,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="similar_service"
-                              value="option4"
+                              name="No"
+                              value="No"
                               id="similar_service_no"
                               checked={selectedOption1 === "option4"}
-                              onChange={() =>
-                                handleCheckboxChange1("option4", "No")
-                              }
+                              onChange={() => handleCheckboxChange1("option4")}
                             />
                             <label
                               className="text-[14px]"
@@ -849,13 +845,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="budget"
-                              value="option1"
+                              name="Under$500"
+                              value="Under $500"
                               id="budget_under_500"
                               checked={selectedOption2 === "option1"}
-                              onChange={() =>
-                                handleCheckboxChange2("option1", "Under $500")
-                              }
+                              onChange={() => handleCheckboxChange2("option1")}
                             />
                             <label
                               className="text-[14px]"
@@ -867,13 +861,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="budget"
-                              value="option2"
+                              name="Under$1000"
+                              value="$500 - $1000"
                               id="budget_500_to_1000"
                               checked={selectedOption2 === "option2"}
-                              onChange={() =>
-                                handleCheckboxChange2("option2", "$500 - $1000")
-                              }
+                              onChange={() => handleCheckboxChange2("option2")}
                             />
                             <label
                               className="text-[14px]"
@@ -886,16 +878,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="budget"
-                              value="option3"
+                              name="Under$1500"
+                              value=" $1000 - $5000"
                               id="budget_1000_to_5000"
                               checked={selectedOption2 === "option3"}
-                              onChange={() =>
-                                handleCheckboxChange2(
-                                  "option3",
-                                  "$1000 - $5000"
-                                )
-                              }
+                              onChange={() => handleCheckboxChange2("option3")}
                             />
                             <label
                               className="text-[14px]"
@@ -908,13 +895,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="budget"
-                              value="option4"
+                              name="Under$5000"
+                              value="$5000+"
                               id="budget_over_5000"
                               checked={selectedOption2 === "option4"}
-                              onChange={() =>
-                                handleCheckboxChange2("option4", "$5000+")
-                              }
+                              onChange={() => handleCheckboxChange2("option4")}
                             />
                             <label
                               className="text-[14px]"
@@ -939,16 +924,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="project_timeframe"
-                              value="option1"
+                              name="urgent"
+                              value="Urgent (less than a month)"
                               id="project_timeframe_urgent"
                               checked={selectedOption3 === "option1"}
-                              onChange={() =>
-                                handleCheckboxChange3(
-                                  "option1",
-                                  "Urgent (less than a month)"
-                                )
-                              }
+                              onChange={() => handleCheckboxChange3("option1")}
                             />
                             <label
                               className="text-[14px]"
@@ -960,13 +940,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="project_timeframe"
-                              value="option2"
+                              name="1-3-months"
+                              value="1-3 months"
                               id="project_timeframe_1_to_3_months"
                               checked={selectedOption3 === "option2"}
-                              onChange={() =>
-                                handleCheckboxChange3("option2", "1-3 months")
-                              }
+                              onChange={() => handleCheckboxChange3("option2")}
                             />
                             <label
                               className="text-[14px]"
@@ -979,13 +957,11 @@ const page = () => {
                           <div className="flex gap-4">
                             <input
                               type="checkbox"
-                              name="project_timeframe"
-                              value="option3"
+                              name="Flexible"
+                              value="Flexible"
                               id="project_timeframe_flexible"
                               checked={selectedOption3 === "option3"}
-                              onChange={() =>
-                                handleCheckboxChange3("option3", "Flexible")
-                              }
+                              onChange={() => handleCheckboxChange3("option3")}
                             />
                             <label
                               className="text-[14px]"
