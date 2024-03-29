@@ -6,6 +6,7 @@ import {
   fadeIn,
   slideIn,
   staggerContainer,
+  textVariant4,
 } from "@/font_utils/motion";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
@@ -32,6 +33,14 @@ const plexmono = IBM_Plex_Mono({
   subsets: ["latin"],
   display: "swap",
 });
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import {
+  SwipperNewBtn,
+  SwipperNewBtn1,
+} from "@/components/reusablecomponent/SwipperNewBtn";
+
 const page = () => {
   const form = useRef();
 
@@ -100,7 +109,19 @@ const page = () => {
   const handleDone = () => {
     // console.log(`Done after 5 loops!`);
   };
+  const swiperRef = useRef(null);
 
+  const breakpoints = {
+    300: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+  };
   return (
     <div>
       <div
@@ -495,19 +516,345 @@ const page = () => {
           />
           <div className=" max-w-[1000px]  py-20 px-4 tablet:px-0  rounded-md">
             <div className="grid grid-cols-1items-center tablet:grid-cols-3 ">
-              <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("freeinitialconsultation")}
-                </span>
-              </Button>
-              <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("terminvereinbaren")}
-                </span>
-              </Button>{" "}
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("freeinitialconsultation")}
+                  </span>
+                </Button>
+              </a>
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("terminvereinbaren")}
+                  </span>
+                </Button>{" "}
+              </a>
             </div>
           </div>
-          <div className="">
+
+          <Swiper
+            modules={[Navigation, Autoplay, Pagination]}
+            slidesPerView="auto"
+            loop={true}
+            autoplay={{
+              delay: 12000,
+              speed: 3000,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper  max-w-[1400px] my-8 "
+            breakpoints={breakpoints}
+          >
+            <motion.div
+              variants={textVariant4}
+              initial="hidden"
+              whileInView="show"
+              className="absolute w-[300px] tablet:w-auto max-w-[800px]  mx-auto tablet:h-[400px] z-50 top-[350px] tablet:top-auto tablet:bottom-[20px] left-[30px] tablet:left-[200px]"
+            >
+              <SwipperNewBtn />
+            </motion.div>
+
+            <motion.div
+              variants={textVariant2}
+              initial="hidden"
+              whileInView="show"
+              className="absolute  max-w-[800px]  mx-auto hidden tablet:block h-[400px] z-50 bottom-[20px] tablet:right-0"
+            >
+              <SwipperNewBtn1 />
+            </motion.div>
+
+            <SwiperSlide>
+              <div className="px-4 max-w-[1050px] mx-auto overflow-hidden h-auto pb-8  tablet:py-24 flex flex-col tablet:flex-none tablet:grid  tablet:grid-cols-2 items-center gap-8">
+                <div className="py-6 relative  min-h-[400px] tablet:h-full w-full tablet:py-0 ">
+                  <motion.div
+                    variants={slideIn("left", "tween", 0.3, 1)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute  z-50 top-0 left-0"
+                  >
+                    <Link
+                      target="_blank"
+                      href={
+                        "https://realestateinghana.com/realestateimagegenerator"
+                      }
+                    >
+                      <Image
+                        src="/images/aiImage.jpg"
+                        alt="hero_image"
+                        width={940}
+                        height={788}
+                        className="rounded-md"
+                      />
+                    </Link>
+                  </motion.div>
+
+                  <Image
+                    src="/images/icon-circle.png"
+                    alt="hero_image"
+                    width={350}
+                    // 1875 x 625
+                    height={400}
+                    className="absolute z-10 hidden tablet:block bottom-0 left-[20px]"
+                  />
+                  <Image
+                    src="/images/marketbg.png"
+                    alt="hero_image"
+                    width={103}
+                    height={385}
+                    className="absolute   z-10 bottom-[30px] right-0"
+                  />
+                  <motion.div
+                    variants={textVariant2}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute bottom-0 right-0 h-[200px] w-[300px]"
+                  >
+                    <Image
+                      src="/images/beautiful-woman-human-robot-artificial-intelligenc-2023-11-27-05-01-16-utc.jpeg"
+                      alt="hero_image"
+                      width={350}
+                      height={200}
+                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-0 right-0 "
+                    />{" "}
+                  </motion.div>
+                </div>
+
+                <div className="min-h-[400px] flex flex-col justify-center items-center h-[500px] py-8 tablet:py-0">
+                  <motion.h2
+                    variants={textVariant4}
+                    initial="hidden"
+                    whileInView="show"
+                    className={`${work_san.className} font-thin uppercase   text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]`}
+                  >
+                    {" "}
+                    {t("webh2")}
+                  </motion.h2>
+                  {/* <Description
+                    className="py-12 leading-[25px]  text-[18px] text-[#516469] "
+                    text={t("aiDes")}
+                  /> */}
+                  <ul className="px-4 pt-8  list-disc">
+                    <li
+                      className={`${plexmono.className} leading-[25px]  text-[18px] text-[#516469] `}
+                    >
+                      {t("webbullet1")}
+                    </li>
+                    <li
+                      className={`${plexmono.className} py-2 leading-[25px]  text-[18px] text-[#516469] `}
+                    >
+                      {t("webbullet2")}
+                    </li>
+                    <li
+                      className={`${plexmono.className}  leading-[25px]  text-[18px] text-[#516469] `}
+                    >
+                      {t("webbullet3")}
+                    </li>
+                    <li
+                      className={`${plexmono.className} py-2  leading-[25px]  text-[18px] text-[#516469]`}
+                    >
+                      {t("webbullet4")}
+                    </li>
+                    <li
+                      className={`${plexmono.className} leading-[25px]  text-[18px] text-[#516469] `}
+                    >
+                      {t("webbullet5")}
+                    </li>
+                    <li
+                      className={`${plexmono.className} py-2  leading-[25px]  text-[18px] text-[#516469] `}
+                    >
+                      {t("webbullet6")}
+                    </li>
+                  </ul>
+                  {/* <Button
+                    className={
+                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
+                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
+                    }
+                  >
+                    <Link
+                      href={"contact"}
+                      className="text-black mt-p group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
+                    >
+                      {t("hero_button")}
+                    </Link>
+                  </Button> */}
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=4915213599612"
+                  >
+                    <Button className="w-[300px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                      <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
+                        <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
+                          <BsWhatsapp className="min-w-[50px]" />
+                          {t("servicewhats")}
+                        </p>
+                      </div>
+                    </Button>{" "}
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="px-4 max-w-[1050px] mx-auto overflow-hidden h-auto pb-8  tablet:py-24 flex flex-col tablet:flex-none tablet:grid  tablet:grid-cols-2 items-center gap-8">
+                <div className="py-6 relative  min-h-[400px] tablet:h-full w-full tablet:py-0 ">
+                  <motion.div
+                    variants={slideIn("left", "tween", 0.3, 1)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute  z-50 top-0 left-0"
+                  >
+                    <Link href="/trends">
+                      <Image
+                        src="/images/BusinessTOOLSnew.jpg"
+                        alt="hero_image"
+                        width={940}
+                        height={788}
+                        className="  rounded-md"
+                      />{" "}
+                    </Link>
+                  </motion.div>
+                  <Image
+                    src="/images/icon-circle.png"
+                    alt="hero_image"
+                    width={350}
+                    height={400}
+                    className="absolute z-10 hidden tablet:block bottom-0 left-[20px]"
+                  />
+                  <Image
+                    src="/images/marketbg.png"
+                    alt="hero_image"
+                    width={103}
+                    height={385}
+                    className="absolute hidden tablet:block  z-10 bottom-[30px] right-0"
+                  />
+                  <motion.div
+                    variants={textVariant2}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute bottom-0 right-0 h-[200px] w-[300px]"
+                  >
+                    <Image
+                      src="/images/wepik-export-20240309152720x2oJ.jpeg"
+                      alt="hero_image"
+                      width={350}
+                      height={200}
+                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-40px] right-0 "
+                    />{" "}
+                  </motion.div>
+                </div>
+
+                <div className="min-h-[400px] flex flex-col items-center justify-center py-8 tablet:py-0">
+                  <motion.h2
+                    variants={textVariant4}
+                    initial="hidden"
+                    whileInView="show"
+                    className={`${work_san.className} font-thin uppercase  text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[45px] text-[#111]`}
+                  >
+                    {t("TrendsTool")}
+                  </motion.h2>
+                  <Description
+                    className="py-4 leading-[25px] text-[18px] text-[#516469] "
+                    text={t("TrendsDes")}
+                  />
+
+                  <Button
+                    className={
+                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
+                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
+                    }
+                  >
+                    <Link
+                      href={"contact"}
+                      className="text-black  group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
+                    >
+                      {t("hero_button")}
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="px-4 max-w-[1050px] mx-auto overflow-hidden h-auto pb-8  tablet:py-24 flex flex-col tablet:flex-none tablet:grid  tablet:grid-cols-2 items-center gap-8">
+                <div className="py-6 relative  min-h-[400px] tablet:h-full w-full tablet:py-0 ">
+                  <motion.div
+                    variants={slideIn("left", "tween", 0.3, 1)}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute  z-50 top-0 left-0"
+                  >
+                    <Image
+                      src="/images/tools.jpg"
+                      alt="hero_image"
+                      width={940}
+                      height={788}
+                      className="scale-y-[1.1] mt-8 rounded-md"
+                    />
+                  </motion.div>
+                  <Image
+                    src="/images/icon-circle.png"
+                    alt="hero_image"
+                    width={350}
+                    // 1875 x 625
+                    height={400}
+                    className="absolute z-10 hidden tablet:block bottom-0 left-[20px]"
+                  />
+                  <Image
+                    src="/images/marketbg.png"
+                    alt="hero_image"
+                    width={103}
+                    height={385}
+                    className="absolute hidden tablet:block  z-10 bottom-[30px] right-0"
+                  />
+                  <motion.div
+                    variants={textVariant2}
+                    initial="hidden"
+                    whileInView="show"
+                    className="absolute bottom-0  right-0 h-[200px] w-[300px]"
+                  >
+                    <Image
+                      src="/images/market2.png"
+                      alt="hero_image"
+                      width={350}
+                      height={200}
+                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-100px] right-0 "
+                    />{" "}
+                  </motion.div>
+                </div>
+
+                <div className="min-h-[400px] mt-8 flex flex-col justify-center items-center py-8 tablet:py-0">
+                  <motion.h2
+                    variants={textVariant4}
+                    initial="hidden"
+                    whileInView="show"
+                    className={`${work_san.className}   text-[28px]  uppercase leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111]`}
+                  >
+                    {t("enhanceMent")}
+                  </motion.h2>
+                  <Description
+                    className="py-4 leading-[25px] tablet:text-[18px] text-[#516469] "
+                    text={t("enhanceMentDes")}
+                  />
+
+                  <Button
+                    className={
+                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
+                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
+                    }
+                  >
+                    <Link
+                      href={"contact"}
+                      className="text-black group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
+                    >
+                      {t("hero_button")}
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+          {/* <div className="">
             <Description
               className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
               text={t("webh2")}
@@ -599,7 +946,7 @@ const page = () => {
               height={400}
               className="py-8 w-full tablet:w-auto"
             />{" "}
-          </motion.div>
+          </motion.div> */}
 
           <div className="py-24">
             <Description
@@ -624,7 +971,7 @@ const page = () => {
               </Button>{" "}
             </a>
           </div>
-          <motion.div
+          {/* <motion.div
             variants={fadeIn("up", "tween", 1.8, 1)}
             initial="hidden"
             whileInView="show"
@@ -637,7 +984,7 @@ const page = () => {
               height={400}
               className="py-8 w-full tablet:w-auto"
             />
-          </motion.div>
+          </motion.div> */}
 
           <Description
             className={`${work_san.className} uppercase pt-20 mt-8 pb-4  text-[25px]  leading-[28px] tablet:text-[30px]  tablet:leading-[40px] text-[#111] `}
@@ -645,7 +992,7 @@ const page = () => {
           />
 
           <Description
-            className="text-[#18191c] py-2  font-thin text-[18px]"
+            className="text-[#18191c] py-2 capitalize font-thin text-[18px]"
             text={t("Ergreifejetzt")}
           />
 
@@ -669,7 +1016,7 @@ const page = () => {
               <p className="py-3  leading-[25px] text-[18px] text-[#18191c]">
                 {t("Service-Details")}:
               </p>
-              <div className="overflow-hidden">
+              <div className="overflow-hidden" id="form">
                 <motion.form
                   variants={slideIn("down", "tween", 0.3, 1)}
                   initial="hidden"

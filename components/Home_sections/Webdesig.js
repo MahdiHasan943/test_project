@@ -23,12 +23,12 @@ import Description from "../reusablecomponent/Description";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
-import { TypingText, TypingText1 } from "../reusablecomponent/CustomText";
 import { SwiperNavButtons } from "../reusablecomponent/SwiperNavButtons";
 import {
   SwipperNewBtn,
   SwipperNewBtn1,
 } from "../reusablecomponent/SwipperNewBtn";
+import { TypingText, TypingText1 } from "../reusablecomponent/CustomText";
 
 const work_sans = Work_Sans({
   weight: "300",
