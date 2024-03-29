@@ -87,7 +87,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/trends"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                className=" w-full  text-[#111]  capitalize focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("Trends")}
               </Link>
@@ -130,32 +130,32 @@ const Header = () => {
               }
             />
           </div>
-          <div className="absolute group overflow-hidden z-[1000000000] h-[600px] py-8 top-0 tablet:top-[30px] w-[220px] hidden group-hover:block">
+          <div className="absolute capitalize group overflow-hidden z-[1000000000] h-[640px] py-8 top-0 tablet:top-[30px] w-[220px] hidden group-hover:block">
             <motion.div
               // variants={textVariant2}
               // initial="hidden"
 
               // whileInView="show"
-              className="bg-[#fafafa] h-[600px] w-full  mt-8  py-4 "
+              className="bg-[#fafafa] h-[640px] w-full  mt-8  py-4 "
             >
-              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <div className="w-full uppercase px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
                 <Link
                   onClick={() => {
                     navToggle();
                   }}
                   href={"/services/webdesign"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]    focus:font-bold"
+                  className=" w-full uppercase text-[#111] focus:text-[#ffc107]    focus:font-bold"
                 >
                   {t("heroTitle1")}
                 </Link>
               </div>
-              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+              <div className="w-full  px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
                 <Link
                   onClick={() => {
                     navToggle();
                   }}
                   href={"/services/socialmedia"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full uppercase text-[#111] focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe7t")}
                 </Link>
@@ -166,7 +166,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/online-marketing"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe5t")}
                 </Link>
@@ -177,7 +177,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/seo-marketing"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe8t")}
                 </Link>
@@ -188,7 +188,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/local-marketing"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full uppercase  text-[#111]   focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("localm")}
                 </Link>
@@ -200,7 +200,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/search-engine-advertising-sea"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  uppercase text-[#111]   focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("searcheng")}
                 </Link>
@@ -212,7 +212,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/software-development"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  uppercase text-[#111]   focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("sofwared")}
                 </Link>
@@ -224,7 +224,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/ai-services"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe1t")}
                 </Link>
@@ -236,7 +236,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/app-development"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe2t")}
                 </Link>
@@ -248,7 +248,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/e-commerce"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("afterhe6t")}
                 </Link>
@@ -260,7 +260,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/web-analyse"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("webanalysis")}
                 </Link>
@@ -272,7 +272,7 @@ const Header = () => {
                     navToggle();
                   }}
                   href={"/services/affiliate-marketing"}
-                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                  className=" w-full  text-[#111]  uppercase focus:text-[#ffc107]   focus:font-bold"
                 >
                   {t("affilate")}
                 </Link>
@@ -394,7 +394,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/about"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                className=" w-full  text-[#111]  capitalize focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("About")}
               </Link>
@@ -406,7 +406,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/portfolio"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                className=" w-full  text-[#111]  capitalize focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("Portfolios")}
               </Link>
@@ -417,7 +417,7 @@ const Header = () => {
                   navToggle();
                 }}
                 href={"/team_members"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                className=" w-full  text-[#111]  capitalize focus:text-[#ffc107]   focus:font-bold"
               >
                 {t("TeamMembers")}
               </Link>

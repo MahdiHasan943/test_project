@@ -68,25 +68,27 @@ const page = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_3vcletm",
-        "template_4vpdiga",
-        form.current,
-        "NRwXHbN7qICuTorEL"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-          toast.success("Successfully submitted form");
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (agreed) {
+      emailjs
+        .sendForm(
+          "service_3vcletm",
+          "template_4vpdiga",
+          form.current,
+          "NRwXHbN7qICuTorEL"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            toast.success("Successfully submitted form");
+            form.current.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    toast.error("Please agree to the privacy policy before submitting.");
   };
   const { t } = useTranslation();
   const typewriterWords = [t("webdesignh1")];
@@ -503,19 +505,6 @@ const page = () => {
                   {t("terminvereinbaren")}
                 </span>
               </Button>{" "}
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=4915213599612"
-              >
-                <Button className="w-[300px] py-4 mx-auto min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                  <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                    <p className="text-[18px] flex justify-center items-center gap-4 font-semibold">
-                      <BsWhatsapp className="min-w-[50px]" />
-                      {t("servicewhats")}
-                    </p>
-                  </div>
-                </Button>{" "}
-              </a>
             </div>
           </div>
           <div className="">
@@ -656,11 +645,11 @@ const page = () => {
           />
 
           <Description
-            className={`${work_san.className} uppercase py-4  text-[20x]  leading-[28px] tablet:text-[25px]  tablet:leading-[40px] text-[#111] `}
+            className="text-[#18191c] py-2  font-thin text-[18px]"
             text={t("Ergreifejetzt")}
           />
 
-          <div className=" relative contact w-full  overflow-hidden  h-[1750px] tablet:h-auto  min-h-[1350px]   max-w-[1050px] mx-auto my-20   rounded-md">
+          <div className=" relative contact w-full  overflow-hidden  h-[1750px] tablet:h-auto  min-h-[1350px]   mx-auto my-20   rounded-md">
             {/* style={{backgroundImage: 'url(/images/contact.png)'}} */}
             <Image
               src={"/images/contact.png"}
@@ -686,7 +675,7 @@ const page = () => {
                   initial="hidden"
                   whileInView="show"
                   id="con"
-                  className="tablet:flex z-[100000000000]  gap-8 mt-8 py-8  h-full px-6 rounded-sm bg-[#fff] max-w-[650px]  "
+                  className="tablet:flex z-[100000000000]  gap-8 mt-8 py-8  h-full px-4 rounded-sm bg-[#fff] max-w-[680px]  "
                   ref={form}
                   onSubmit={sendEmail}
                   action=""
@@ -1023,14 +1012,10 @@ const page = () => {
                         </label>
                       </div>
 
-                      <Button
-                        onClick={sendEmail}
-                        className="w-[180px] group mt-4"
-                      >
+                      <Button className="w-[180px] group mt-4">
                         <button
                           className={
-                            "text-black group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2" +
-                            (agreed ? "" : " opacity-50 pointer-events-none")
+                            "text-black group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
                           }
                         >
                           {t("SendMessage")}
@@ -1047,11 +1032,11 @@ const page = () => {
                 className="absolute hidden tablet:block min-h-[400px] z-50 bottom-0 right-0"
               >
                 <Image
-                  src={"/images/contacts.png"}
+                  src={"/images/newform.png"}
                   alt="contact"
-                  width={360}
-                  height={400}
-                  className=""
+                  width={800}
+                  height={2000}
+                  className="w-[800px] min-h-[600px] mr-[-350px]"
                 />
               </motion.div>
             </div>{" "}
