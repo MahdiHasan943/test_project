@@ -138,10 +138,11 @@ const Header = () => {
           <motion.div
             // variants={textVariant2}
             // initial="hidden"
+
             // whileInView="show"
             className="bg-[#fafafa] h-[600px] w-full  mt-8  py-4 "
           >
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -152,7 +153,7 @@ const Header = () => {
                 {t("heroTitle1")}
               </Link>
             </div>
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -163,7 +164,7 @@ const Header = () => {
                 {t("afterhe7t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -174,7 +175,7 @@ const Header = () => {
                 {t("afterhe5t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -185,7 +186,7 @@ const Header = () => {
                 {t("afterhe8t")}
               </Link>
             </div>
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -197,7 +198,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -209,7 +210,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -221,7 +222,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -233,7 +234,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -245,7 +246,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -257,7 +258,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
@@ -269,7 +270,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-full px-6 py-1 border border-[#ddd]  border-b-0 border-t-0 border-l-0 border-r-0">
+            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-0  border-t-0 border-l-0 border-r-0">
               <Link
                 onClick={() => {
                   navToggle();
