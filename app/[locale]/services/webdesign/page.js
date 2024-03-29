@@ -457,9 +457,9 @@ const page = () => {
             variants={slideIn("left", "tween", 0.8, 1)}
             initial="hidden"
             whileInView="show"
-            className=""
+            className=" hidden tablet:block"
           >
-            <h1 className=" uppercase   text-[24px]  leading-[25px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]">
+            <h1 className="uppercase   text-[24px]  leading-[40px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]">
               <Typewriter
                 words={typewriterWords}
                 loop={5}
@@ -473,6 +473,19 @@ const page = () => {
               />
             </h1>
           </motion.div>
+          <h1 className="uppercase block tablet:hidden  text-[24px]  leading-[40px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]">
+            <Typewriter
+              words={typewriterWords}
+              loop={5}
+              cursor
+              cursorStyle="| "
+              typeSpeed={70}
+              deleteSpeed={90}
+              delaySpeed={3000}
+              onLoopDone={handleDone}
+              onType={handleType}
+            />
+          </h1>
 
           <Description
             className="py-12 leading-[25px]  text-[18px] text-[#516469] "
