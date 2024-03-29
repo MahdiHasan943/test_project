@@ -677,7 +677,7 @@ const page = () => {
             text={t("Ergreifejetzt")}
           />
 
-          <div className=" relative contact w-full  overflow-hidden  h-[1250px] tablet:h-auto  min-h-[1350px]   max-w-[1050px] mx-auto my-20   rounded-md">
+          <div className=" relative contact w-full  overflow-hidden  h-[1750px] tablet:h-auto  min-h-[1350px]   max-w-[1050px] mx-auto my-20   rounded-md">
             {/* style={{backgroundImage: 'url(/images/contact.png)'}} */}
             <Image
               src={"/images/contact.png"}
@@ -688,7 +688,7 @@ const page = () => {
             <div className="px-4 tablet:px-10 py-16  absolute top-0 left-0 w-full h-full z-50">
               <Title
                 text={t("serviceFormTitle")}
-                className=" font-extrabold capitalize text-[40px] leading-[30px] tablet:text-[50px]  tablet:leading-[40px] text-[#18191c]"
+                className=" font-extrabold capitalize text-[40px] leading-[40px] tablet:text-[50px]  tablet:leading-[40px] text-[#18191c]"
               />
 
               <p className="text-[#18191c] py-5 text-[18px]">
