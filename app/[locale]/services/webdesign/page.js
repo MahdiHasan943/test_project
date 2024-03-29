@@ -123,36 +123,6 @@ const page = () => {
         <div
           className={`${plexmono.className} max-w-[1000px] uppercase  flex flex-col `}
         >
-          {/* <Link href={"/services/webdesign"}>
-            <Button
-              className={
-                "w-[300px] mx-auto animated-button_3 mt-12 group tablet:mx-0 tablet:mt-3"
-                // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
-              }
-            >
-              <motion.div
-                variants={slideIn("left", "tween", 0.3, 1)}
-                initial="hidden"
-                whileInView="show"
-                className="absolute  group uppercase left-0 top-0 w-full   z-10   ease-in-out duration-500  bg-[#ffc107] h-full"
-              >
-                <div className="w-full h-full gap-6 z-50 absolute left-0 top-0 flex flex-col items-center justify-center">
-                  <button className="text-black uppercase mt-p group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                    {t("heroTitle1")}
-                  </button>
-                </div>
-                <div className="w-full translate-x-[-100%] group-hover:translate-x-0 duration-300 delay-75 ease-linear  group-hover:bg-[black] h-full gap-6 z-[99999] uppercase absolute left-0 top-0 flex flex-col items-center justify-center">
-                  <button className="text-black mt-p uppercase group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                    {t("heroTitle1")}
-                  </button>
-                </div>
-              </motion.div>
-              <button className="text-white uppercase bg-[#111] mt-p group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                {t("heroTitle1")}
-              </button>
-            </Button>
-          </Link> */}
-
           <Link href={"/services/socialmedia"}>
             <Button
               className={
@@ -489,7 +459,7 @@ const page = () => {
             whileInView="show"
             className=""
           >
-            <h1 className=" uppercase   text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]">
+            <h1 className=" uppercase   text-[24px]  leading-[25px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]">
               <Typewriter
                 words={typewriterWords}
                 loop={5}
