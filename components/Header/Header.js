@@ -96,30 +96,27 @@ const Header = () => {
         </div>
       </li>
 
-      <li
-        className="group  relative tablet:static"
-        onClick={() => {
-          // Potentially different action
-          navToggle();
-          setColor("/services");
-        }}
-      >
+      <li className="">
         <Link
           href={"/services"}
+          onClick={() => {
+            navToggle();
+            setColor("/services");
+          }}
           className={
             stickyClass
-              ? `   px-8 ${
+              ? ` px-8 ${
                   color === "/services"
                     ? " text-[#ffc107] group        text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                     : "text-[#fff] tablet:text-[rgb(0,0,0)] group  text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                 }
-               } relative`
+               } group  relative tablet:static  `
               : `${
                   color === "/services"
-                    ? " text-[#ffc107]         text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
+                    ? " text-[#ffc107]    group     text-[17px] hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                     : "text-[#fff] group text-[17px]        hover:underline underline-offset-8 decoration-[#ffc107] duration-200 delay-75 ease-linear  py-2 rounded-md px-6"
                 }
-               } px-8 relative `
+               }group  relative tablet:static px-8  `
           }
         >
           {" "}
@@ -133,156 +130,156 @@ const Header = () => {
               }
             />
           </div>
+          <div className="absolute group overflow-hidden z-[1000000000] h-[600px] py-8 top-0 tablet:top-[30px] w-[220px] hidden group-hover:block">
+            <motion.div
+              // variants={textVariant2}
+              // initial="hidden"
+
+              // whileInView="show"
+              className="bg-[#fafafa] h-[600px] w-full  mt-8  py-4 "
+            >
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/webdesign"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]    focus:font-bold"
+                >
+                  {t("heroTitle1")}
+                </Link>
+              </div>
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/socialmedia"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe7t")}
+                </Link>
+              </div>
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/online-marketing"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe5t")}
+                </Link>
+              </div>
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/seo-marketing"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe8t")}
+                </Link>
+              </div>
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/local-marketing"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("localm")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/search-engine-advertising-sea"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("searcheng")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/software-development"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("sofwared")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/ai-services"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe1t")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/app-development"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe2t")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/e-commerce"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("afterhe6t")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/web-analyse"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("webanalysis")}
+                </Link>
+              </div>
+
+              <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-0  border-t-0 border-l-0 border-r-0">
+                <Link
+                  onClick={() => {
+                    navToggle();
+                  }}
+                  href={"/services/affiliate-marketing"}
+                  className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
+                >
+                  {t("affilate")}
+                </Link>
+              </div>
+            </motion.div>
+          </div>
         </Link>
-        <div className="absolute group overflow-hidden z-[1000000000] h-[600px] py-8 top-0 tablet:top-[30px] w-[220px] hidden group-hover:block">
-          <motion.div
-            // variants={textVariant2}
-            // initial="hidden"
-
-            // whileInView="show"
-            className="bg-[#fafafa] h-[600px] w-full  mt-8  py-4 "
-          >
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/webdesign"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]    focus:font-bold"
-              >
-                {t("heroTitle1")}
-              </Link>
-            </div>
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/socialmedia"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe7t")}
-              </Link>
-            </div>
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/online-marketing"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe5t")}
-              </Link>
-            </div>
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/seo-marketing"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe8t")}
-              </Link>
-            </div>
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/local-marketing"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("localm")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/search-engine-advertising-sea"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("searcheng")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/software-development"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("sofwared")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/ai-services"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe1t")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/app-development"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe2t")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/e-commerce"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("afterhe6t")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-1  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/web-analyse"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("webanalysis")}
-              </Link>
-            </div>
-
-            <div className="w-full px-6 py-[5px] border border-[#ddd]  border-b-0  border-t-0 border-l-0 border-r-0">
-              <Link
-                onClick={() => {
-                  navToggle();
-                }}
-                href={"/services/affiliate-marketing"}
-                className=" w-full  text-[#111] focus:text-[#ffc107]   focus:font-bold"
-              >
-                {t("affilate")}
-              </Link>
-            </div>
-          </motion.div>
-        </div>
       </li>
       {/* 
       <li
