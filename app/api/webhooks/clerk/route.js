@@ -119,6 +119,4 @@ async function POST(req) {
   return new Response("", { status: 200 });
 }
 
-module.exports = {
-  POST,
-};
+export { handler as GET, handler as POST };
