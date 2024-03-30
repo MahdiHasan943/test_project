@@ -142,7 +142,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="max-w-[1440px] flex flex-col-reverse tablet:flex tablet:flex-row gap-8  py-20 px-4 mx-auto ">
+      <div className="max-w-[1640px] flex flex-col-reverse tablet:flex tablet:flex-row gap-8  py-20 px-4 mx-auto ">
         <div
           className={`${plexmono.className} max-w-[1000px] uppercase  flex flex-col `}
         >
@@ -579,7 +579,7 @@ const page = () => {
                       }
                     >
                       <Image
-                        src="/images/aiImage.jpg"
+                        src="/images/nerwwebcarousel4.png"
                         alt="hero_image"
                         width={940}
                         height={788}
@@ -610,7 +610,7 @@ const page = () => {
                     className="absolute bottom-0 right-0 h-[200px] w-[300px]"
                   >
                     <Image
-                      src="/images/beautiful-woman-human-robot-artificial-intelligenc-2023-11-27-05-01-16-utc.jpeg"
+                      src="/images/nerwwebcarouselsub2.png"
                       alt="hero_image"
                       width={350}
                       height={200}
@@ -665,24 +665,12 @@ const page = () => {
                       {t("webbullet6")}
                     </li>
                   </ul>
-                  {/* <Button
-                    className={
-                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
-                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
-                    }
-                  >
-                    <Link
-                      href={"contact"}
-                      className="text-black mt-p group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
-                    >
-                      {t("hero_button")}
-                    </Link>
-                  </Button> */}
+
                   <a
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Button className="w-[300px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                       <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
                         <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
                           <BsWhatsapp className="min-w-[50px]" />
@@ -706,11 +694,11 @@ const page = () => {
                   >
                     <Link href="/trends">
                       <Image
-                        src="/images/BusinessTOOLSnew.jpg"
+                        src="/images/nerwwebcarousel2.png"
                         alt="hero_image"
                         width={940}
                         height={788}
-                        className="  rounded-md"
+                        className="  rounded-md scale-y-[1.2] mt-[40px]"
                       />{" "}
                     </Link>
                   </motion.div>
@@ -735,11 +723,11 @@ const page = () => {
                     className="absolute bottom-0 right-0 h-[200px] w-[300px]"
                   >
                     <Image
-                      src="/images/wepik-export-20240309152720x2oJ.jpeg"
+                      src="/images/nerwwebcarouselsub2.png"
                       alt="hero_image"
                       width={350}
-                      height={200}
-                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-40px] right-0 "
+                      height={300}
+                      className="absolute h-[220px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-40px] right-0 "
                     />{" "}
                   </motion.div>
                 </div>
@@ -751,26 +739,26 @@ const page = () => {
                     whileInView="show"
                     className={`${work_san.className} font-thin uppercase  text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[45px] text-[#111]`}
                   >
-                    {t("TrendsTool")}
+                    {t("webh23")}
                   </motion.h2>
                   <Description
                     className="py-4 leading-[25px] text-[18px] text-[#516469] "
-                    text={t("TrendsDes")}
+                    text={t("webh23des")}
                   />
 
-                  <Button
-                    className={
-                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
-                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
-                    }
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Link
-                      href={"contact"}
-                      className="text-black  group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
-                    >
-                      {t("hero_button")}
-                    </Link>
-                  </Button>
+                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                      <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
+                        <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
+                          <BsWhatsapp className="min-w-[50px]" />
+                          {t("servicewhats")}
+                        </p>
+                      </div>
+                    </Button>{" "}
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
@@ -785,11 +773,11 @@ const page = () => {
                     className="absolute  z-50 top-0 left-0"
                   >
                     <Image
-                      src="/images/tools.jpg"
+                      src="/images/nerwwebcarousel5.png"
                       alt="hero_image"
-                      width={940}
-                      height={788}
-                      className="scale-y-[1.1] mt-8 rounded-md"
+                      width={1100}
+                      height={1088}
+                      className="scale-y-[1.2] mt-[70px] rounded-md"
                     />
                   </motion.div>
                   <Image
@@ -814,7 +802,7 @@ const page = () => {
                     className="absolute bottom-0  right-0 h-[200px] w-[300px]"
                   >
                     <Image
-                      src="/images/market2.png"
+                      src="/images/nerwwebcarouselsub2.png"
                       alt="hero_image"
                       width={350}
                       height={200}
@@ -830,161 +818,31 @@ const page = () => {
                     whileInView="show"
                     className={`${work_san.className}   text-[28px]  uppercase leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111]`}
                   >
-                    {t("enhanceMent")}
+                    {t("webh24")}
                   </motion.h2>
                   <Description
                     className="py-4 leading-[25px] tablet:text-[18px] text-[#516469] "
-                    text={t("enhanceMentDes")}
+                    text={t("webh24des")}
                   />
 
-                  <Button
-                    className={
-                      "w-[200px] mx-auto  mt-12 group tablet:mx-0 tablet:mt-3"
-                      // border-l-[4px] border-[#dcac3a] ease-linear delay-200 hover:border-0
-                    }
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Link
-                      href={"contact"}
-                      className="text-black group-hover:text-[#fff] text-[15px]  absolute top-1/2 left-1/1 transform  -translate-y-1/2"
-                    >
-                      {t("hero_button")}
-                    </Link>
-                  </Button>
+                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                      <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
+                        <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
+                          <BsWhatsapp className="min-w-[50px]" />
+                          {t("servicewhats")}
+                        </p>
+                      </div>
+                    </Button>{" "}
+                  </a>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
-          {/* <div className="">
-            <Description
-              className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
-              text={t("webh2")}
-            />
-            <ul className="px-4 pt-8  list-disc">
-              <li
-                className={`${plexmono.className} leading-[25px]  text-[18px] text-[#516469] `}
-              >
-                {t("webbullet1")}
-              </li>
-              <li
-                className={`${plexmono.className} py-2 leading-[25px]  text-[18px] text-[#516469] `}
-              >
-                {t("webbullet2")}
-              </li>
-              <li
-                className={`${plexmono.className}  leading-[25px]  text-[18px] text-[#516469] `}
-              >
-                {t("webbullet3")}
-              </li>
-              <li
-                className={`${plexmono.className} py-2  leading-[25px]  text-[18px] text-[#516469]`}
-              >
-                {t("webbullet4")}
-              </li>
-              <li
-                className={`${plexmono.className} leading-[25px]  text-[18px] text-[#516469] `}
-              >
-                {t("webbullet5")}
-              </li>
-              <li
-                className={`${plexmono.className} py-2  leading-[25px]  text-[18px] text-[#516469] `}
-              >
-                {t("webbullet6")}
-              </li>
-            </ul>
-
-            <Description
-              className="py-8 leading-[25px]  text-[18px] text-[#516469] "
-              text={t("webdes2")}
-            />
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=4915213599612"
-            >
-              <Button className="w-[300px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                  <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
-                    <BsWhatsapp className="min-w-[50px]" />
-                    {t("servicewhats")}
-                  </p>
-                </div>
-              </Button>{" "}
-            </a>
-          </div>
-          <div className="py-24">
-            <Description
-              className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
-              text={t("webh23")}
-            />
-            <Description
-              className="py-12 leading-[25px]  text-[18px] text-[#516469] "
-              text={t("webh23des")}
-            />
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=4915213599612"
-            >
-              <Button className="w-[300px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                  <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
-                    <BsWhatsapp className="min-w-[50px]" />
-                    {t("servicewhats")}
-                  </p>
-                </div>
-              </Button>{" "}
-            </a>
-          </div>
-          <motion.div
-            variants={fadeIn("up", "tween", 1.8, 1)}
-            initial="hidden"
-            whileInView="show"
-            className=""
-          >
-            <Image
-              src={"/images/responsiveImage1.png"}
-              alt="design"
-              width={600}
-              height={400}
-              className="py-8 w-full tablet:w-auto"
-            />{" "}
-          </motion.div> */}
-
-          <div className="py-24">
-            <Description
-              className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
-              text={t("webh24")}
-            />
-            <Description
-              className="py-12 leading-[25px]  text-[18px] text-[#516469] "
-              text={t("webh24des")}
-            />
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=4915213599612"
-            >
-              <Button className="w-[300px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                  <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
-                    <BsWhatsapp className="min-w-[50px]" />
-                    {t("servicewhats")}
-                  </p>
-                </div>
-              </Button>{" "}
-            </a>
-          </div>
-          {/* <motion.div
-            variants={fadeIn("up", "tween", 1.8, 1)}
-            initial="hidden"
-            whileInView="show"
-            className=""
-          >
-            <Image
-              src={"/images/7580918.jpg"}
-              alt="design"
-              width={600}
-              height={400}
-              className="py-8 w-full tablet:w-auto"
-            />
-          </motion.div> */}
+          {/* form start */}
 
           <Description
             className={`${work_san.className} uppercase pt-20 mt-8 pb-4  text-[25px]  leading-[28px] tablet:text-[30px]  tablet:leading-[40px] text-[#111] `}
@@ -1022,7 +880,7 @@ const page = () => {
                   initial="hidden"
                   whileInView="show"
                   id="con"
-                  className="tablet:flex z-[100000000000]  gap-8 mt-8 py-8  h-full px-4 rounded-sm bg-[#fff] max-w-[680px]  "
+                  className="tablet:flex z-[100000000000]  gap-8 mt-8 py-8  h-full px-4 rounded-sm bg-[#fff] max-w-[750px]  "
                   ref={form}
                   onSubmit={sendEmail}
                   action=""
@@ -1383,7 +1241,7 @@ const page = () => {
                   alt="contact"
                   width={800}
                   height={2000}
-                  className="w-[800px] min-h-[600px] mr-[-350px]"
+                  className="w-[1000px] min-h-[600px] mr-[-400px]"
                 />
               </motion.div>
             </div>{" "}
