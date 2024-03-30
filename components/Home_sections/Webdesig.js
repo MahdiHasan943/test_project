@@ -86,7 +86,7 @@ const Webdesig = () => {
           className="w-[200px] ml-4 tablet:ml-0  h-[40px] bg-[#ffc107] flex items-center px-4"
         >
           <TypingText
-            textStyles={`${work_sans.className} text-[#111] font-extrbold text-[24px]`}
+            textStyles={`${work_sans.className} text-[#111] font-extrbold text-[19px] tablet:text-[24px]`}
             title={t("WHOWEARE")}
           />
         </motion.div>
@@ -128,10 +128,10 @@ const Webdesig = () => {
             variants={slideIn("left", "tween", 0.3, 1)}
             initial="hidden"
             whileInView="show"
-            className="w-[400px] ml-4 tablet:ml-0  h-[40px] bg-[#ffc107] flex items-center px-4"
+            className="w-[350px] tablet:w-[400px] ml-4 tablet:ml-0  h-[40px] bg-[#ffc107] flex items-center px-4"
           >
             <TypingText
-              textStyles={`${work_sans.className} uppercase  text-[#111] font-extrbold text-[24px]`}
+              textStyles={`${work_sans.className} text-[#111] font-extrbold text-[19px] tablet:text-[24px]`}
               title={t("toolTitleHome")}
             />
           </motion.div>
