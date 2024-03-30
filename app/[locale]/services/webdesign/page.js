@@ -515,7 +515,7 @@ const page = () => {
             text={t("webdesignMaindes")}
           />
           <div className=" max-w-[1000px]  py-20 px-4 tablet:px-0  rounded-md">
-            <div className="grid grid-cols-1items-center tablet:grid-cols-3 ">
+            <div className="grid grid-cols-1items-center gap-8 tablet:grid-cols-3 ">
               <a href="#form">
                 <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                   <span className="text-[18px] font-semibold">
@@ -670,7 +670,7 @@ const page = () => {
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                    <Button className="w-[250px] py-4 mt-5 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                       <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
                         <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
                           <BsWhatsapp className="min-w-[50px]" />
@@ -727,7 +727,7 @@ const page = () => {
                       alt="hero_image"
                       width={350}
                       height={300}
-                      className="absolute h-[220px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-40px] right-0 "
+                      className="absolute h-[220px] mt-[-30px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-20px] right-0 "
                     />{" "}
                   </motion.div>
                 </div>
@@ -750,7 +750,7 @@ const page = () => {
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                    <Button className="w-[250px]  mt-5  py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                       <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
                         <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
                           <BsWhatsapp className="min-w-[50px]" />
@@ -829,7 +829,7 @@ const page = () => {
                     target="_blank"
                     href="https://api.whatsapp.com/send?phone=4915213599612"
                   >
-                    <Button className="w-[250px] py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                    <Button className="w-[250px] py-4  mt-5  min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                       <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
                         <p className="text-[18px] flex justify-between items-center gap-4 font-semibold">
                           <BsWhatsapp className="min-w-[50px]" />
