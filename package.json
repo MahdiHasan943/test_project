@@ -21,6 +21,7 @@
     "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.7",
     "chart.js": "^4.4.1",
+    "clsx": "^2.1.0",
     "cookies-next": "^4.1.1",
     "framer-motion": "^11.0.3",
     "i18next": "^23.8.2",
@@ -47,7 +48,9 @@
     "sanity-plugin-i18n-fields": "^1.0.0",
     "stripe": "^14.21.0",
     "styled-components": "^6.1.8",
-    "swiper": "^11.0.5"
+    "svix": "^1.21.0",
+    "swiper": "^11.0.5",
+    "tailwind-merge": "^2.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
