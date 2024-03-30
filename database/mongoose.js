@@ -19,7 +19,7 @@ const connectToDatabase = async () => {
   cached.promise =
     cached.promise ||
     mongoose.connect(MONGODB_URL, {
-      dbName: "my_agency-link711",
+      dbName: "my_agency_link711",
       bufferCommands: false,
     });
 
