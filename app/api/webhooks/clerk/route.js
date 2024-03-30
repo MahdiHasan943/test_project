@@ -1,9 +1,8 @@
 /* eslint-disable camelcase */
 const { clerkClient } = require("@clerk/nextjs");
-const { WebhookEvent } = require("@clerk/nextjs/server");
+const { Webhook } = require("svix");
 const { headers } = require("next/headers");
 const { NextResponse } = require("next/server");
-const { Webhook } = require("svix");
 
 const {
   createUser,
@@ -11,7 +10,7 @@ const {
   updateUser,
 } = require("@/lib/actions/user.actions");
 
-export async function POST(req) {
+async function POST(req) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
@@ -22,7 +21,7 @@ export async function POST(req) {
   }
 
   // Get the headers
-  const headerPayload = headers();
+  const headerPayload = headers(req);
   const svix_id = headerPayload.get("svix-id");
   const svix_timestamp = headerPayload.get("svix-timestamp");
   const svix_signature = headerPayload.get("svix-signature");
@@ -63,13 +62,13 @@ export async function POST(req) {
 
   // CREATE
   if (eventType === "user.created") {
-    const { email_addresses, image_url, first_name, last_name, username } =
+    const { id, email_addresses, image_url, first_name, last_name, username } =
       evt.data;
 
     const user = {
       clerkId: id,
       email: email_addresses[0].email_address,
-      username: username,
+      username: username || "",
       firstName: first_name,
       lastName: last_name,
       photo: image_url,
@@ -91,12 +90,12 @@ export async function POST(req) {
 
   // UPDATE
   if (eventType === "user.updated") {
-    const { image_url, first_name, last_name, username } = evt.data;
+    const { id, image_url, first_name, last_name, username } = evt.data;
 
     const user = {
       firstName: first_name,
       lastName: last_name,
-      username: username,
+      username: username || "",
       photo: image_url,
     };
 
@@ -107,6 +106,8 @@ export async function POST(req) {
 
   // DELETE
   if (eventType === "user.deleted") {
+    const { id } = evt.data;
+
     const deletedUser = await deleteUser(id);
 
     return NextResponse.json({ message: "OK", user: deletedUser });
@@ -117,3 +118,7 @@ export async function POST(req) {
 
   return new Response("", { status: 200 });
 }
+
+module.exports = {
+  POST,
+};
