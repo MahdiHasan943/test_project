@@ -119,4 +119,4 @@ async function POST(req) {
   return new Response("", { status: 200 });
 }
 
-export { handler as GET, handler as POST };
+export { GET, POST };
