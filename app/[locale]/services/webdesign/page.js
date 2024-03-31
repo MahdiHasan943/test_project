@@ -624,9 +624,8 @@ const page = () => {
                     variants={textVariant4}
                     initial="hidden"
                     whileInView="show"
-                    className={`${work_san.className} font-thin uppercase   text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[40px] text-[#111]`}
+                    className={`${work_san.className} font-thin uppercase   text-[28px]  leading-[28px] tablet:text-[38px]  tablet:leading-[40px] text-[#111]`}
                   >
-                    {" "}
                     {t("webh2")}
                   </motion.h2>
                   {/* <Description
