@@ -489,34 +489,25 @@ const page = () => {
             className="py-12 leading-[25px]  text-[18px] text-[#516469] "
             text={t("webdesignMaindes")}
           />
-
-          <div className=" max-w-[1000px]  py-20 px-4 tablet:px-8 rounded-md">
-            <div className="grid grid-cols-1 gap-12 items-center tablet:grid-cols-3 ">
-              <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("freeinitialconsultation")}
-                </span>
-              </Button>
-              <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("terminvereinbaren")}
-                </span>
-              </Button>{" "}
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=4915213599612"
-              >
-                <Button className="w-[300px] py-4 mx-auto min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                  <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                    <p className="text-[18px] flex justify-center items-center gap-4 font-semibold">
-                      <BsWhatsapp className="min-w-[50px]" />
-                      {t("servicewhats")}
-                    </p>
-                  </div>
+          <div className=" max-w-[1000px]  py-20 px-4 tablet:px-0  rounded-md">
+            <div className="grid grid-cols-1items-center gap-8 tablet:grid-cols-3 ">
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("freeinitialconsultation")}
+                  </span>
+                </Button>
+              </a>
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("terminvereinbaren")}
+                  </span>
                 </Button>{" "}
               </a>
             </div>
           </div>
+
           <div className="">
             <Description
               className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
@@ -690,7 +681,10 @@ const page = () => {
                   onSubmit={sendEmail}
                   action=""
                 >
-                  <div className="py-6 tablet:py-0 max-w-[350px]"></div>
+                  <div
+                    id="form"
+                    className="py-6 tablet:py-0 max-w-[350px]"
+                  ></div>
                   <div className="pb-20">
                     <div className="tablet:flex gap-8 items-center">
                       <div className="tablet:flex gap-8 items-center">
