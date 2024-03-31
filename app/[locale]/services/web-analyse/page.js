@@ -8,7 +8,7 @@ import {
   staggerContainer,
 } from "@/font_utils/motion";
 import { motion } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IBM_Plex_Mono, Lato, Work_Sans } from "next/font/google";
 import emailjs from "@emailjs/browser";
@@ -19,6 +19,7 @@ import Description from "@/components/reusablecomponent/Description";
 import Button from "@/components/reusablecomponent/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { Toaster } from "react-hot-toast";
 const work_san = Work_Sans({
   weight: "300",
   subsets: ["latin"],
@@ -457,34 +458,25 @@ const page = () => {
             className="py-12 leading-[25px]  text-[18px] text-[#516469] "
             text={t("webdesignMaindes")}
           />
-
-          <div className=" max-w-[1000px]  py-20 px-4 tablet:px-8 rounded-md">
-            <div className="grid grid-cols-1 gap-12 items-center tablet:grid-cols-3 ">
-              <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("freeinitialconsultation")}
-                </span>
-              </Button>
-              <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                <span className="text-[18px] font-semibold">
-                  {t("terminvereinbaren")}
-                </span>
-              </Button>{" "}
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=4915213599612"
-              >
-                <Button className="w-[300px] py-4 mx-auto min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
-                  <div className=" absolute top-1/2 left-1/1 transform  -translate-y-1/2">
-                    <p className="text-[18px] flex justify-center items-center gap-4 font-semibold">
-                      <BsWhatsapp className="min-w-[50px]" />
-                      {t("servicewhats")}
-                    </p>
-                  </div>
+          <div className=" max-w-[1000px]  py-20 px-4 tablet:px-0  rounded-md">
+            <div className="grid grid-cols-1items-center gap-8 tablet:grid-cols-3 ">
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("freeinitialconsultation")}
+                  </span>
+                </Button>
+              </a>
+              <a href="#form">
+                <Button className="w-[300px]  tablet:w-[300px]  mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
+                  <span className="text-[18px] font-semibold">
+                    {t("terminvereinbaren")}
+                  </span>
                 </Button>{" "}
               </a>
             </div>
           </div>
+
           <div className="">
             <Description
               className={`${work_san.className} uppercase   text-[28px]  leading-[28px] tablet:text-[35px]  tablet:leading-[40px] text-[#111] `}
