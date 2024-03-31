@@ -13,9 +13,8 @@ export default authMiddleware({
 
   // Ensure that locale specific sign-in pages are public
   publicRoutes: [
-    "/api/webhooks/clerk",
     "/",
-
+    "/api/webhooks/clerk",
     "/de",
 
     "/en",
@@ -118,5 +117,13 @@ export default authMiddleware({
 });
 
 export const config = {
-  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: [
+    "/((?!.*\\..*|_next).*)",
+    "/",
+    "/(api|trpc)(.*)",
+    "/sign-in",
+    "/en/sign-in",
+    "/de/sign-in",
+    "/fr/sign-in",
+  ],
 };

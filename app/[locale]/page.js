@@ -11,6 +11,7 @@ import Customerssay from "@/components/Home_sections/Customerssay";
 import Work from "@/components/Home_sections/Work";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "../i18n";
+import { clerkClient } from "@clerk/nextjs";
 
 const pop = Poppins({
   weight: "500",
@@ -19,7 +20,17 @@ const pop = Poppins({
 });
 // const i18Nemespaces = ['home', 'common'];
 export default async function Home({ params: { locale } }) {
-  // const { t,resources} = await initTranslations(locale,i18Nemespaces );
+  const emailAddress = ["email1@clerk.dev", "email2@clerk.dev"]; // Define the email addresses
+  const phoneNumber = ["+12025550108"]; // Define the phone numbers
+
+  const sessions = await clerkClient.users.getUserList({
+    emailAddress,
+    phoneNumber,
+  }); // Pass emailAddress as a parameter
+
+  // Now you can proceed with handling the sessions data
+  console.log(sessions);
+
   return (
     <section className="">
       <Hero />
