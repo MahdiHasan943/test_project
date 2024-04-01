@@ -142,7 +142,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="max-w-[1640px] flex flex-col-reverse tablet:flex tablet:flex-row gap-8  py-20 px-4 mx-auto ">
+      <div className="max-w-[1640px] flex flex-col-reverse desktop:flex tablet:flex-row gap-8  py-20 px-4 mx-auto ">
         <div
           className={`${plexmono.className} max-w-[1000px] uppercase  flex flex-col `}
         >
