@@ -741,7 +741,7 @@ const page = () => {
                     {t("webh23")}
                   </motion.h2>
                   <Description
-                    className="py-4 leading-[25px] text-[18px] text-[#516469] "
+                    className="py-4 leading-[25px] text-[16px] text-[#516469] "
                     text={t("webh23des")}
                   />
 
@@ -805,7 +805,7 @@ const page = () => {
                       alt="hero_image"
                       width={350}
                       height={200}
-                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-100px] right-0 "
+                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-50px] right-0 "
                     />{" "}
                   </motion.div>
                 </div>
@@ -820,7 +820,7 @@ const page = () => {
                     {t("webh24")}
                   </motion.h2>
                   <Description
-                    className="py-4 leading-[25px] tablet:text-[18px] text-[#516469] "
+                    className="py-4 leading-[25px] text-[16px] text-[#516469] "
                     text={t("webh24des")}
                   />
 
