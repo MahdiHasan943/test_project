@@ -142,7 +142,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="max-w-[1640px] flex flex-col-reverse desktop:flex tablet:flex-row gap-8  py-20 px-4 mx-auto ">
+      <div className="max-w-[1640px] flex flex-col-reverse desktop:flex  gap-2 desktop:gap-8  py-20 px-4 mx-auto ">
         <div
           className={`${plexmono.className} max-w-[1000px] uppercase  flex flex-col `}
         >
@@ -475,7 +475,7 @@ const page = () => {
           </Link>
         </div>
 
-        <div className="tablet:pl-[100px] overflow-hidden">
+        <div className="largeMonitor:pl-[100px] overflow-hidden">
           <motion.div
             variants={slideIn("left", "tween", 0.8, 1)}
             initial="hidden"
@@ -515,7 +515,7 @@ const page = () => {
             text={t("webdesignMaindes")}
           />
           <div className=" max-w-[1000px]  py-20 px-4 tablet:px-0  rounded-md">
-            <div className="grid grid-cols-1items-center gap-8 tablet:grid-cols-3 ">
+            <div className="flex items-center gap-8">
               <a href="#form">
                 <Button className="w-[300px]  tablet:w-[300px] mx-auto py-4 min-h-[60px] focus:bg-[#111] px-4  border border-[#ffc107] duration-300 delay-100 ease-linear  outline-none focus:outline-none hover:border-0 focus:border-0 hover:text-[#fff]">
                   <span className="text-[18px] font-semibold">
@@ -536,12 +536,12 @@ const page = () => {
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
             slidesPerView="auto"
-            loop={true}
-            autoplay={{
-              delay: 12000,
-              speed: 3000,
-              disableOnInteraction: false,
-            }}
+            // loop={true}
+            // autoplay={{
+            //   delay: 12000,
+            //   speed: 3000,
+            //   disableOnInteraction: false,
+            // }}
             className="mySwiper  max-w-[1400px] my-8 "
             breakpoints={breakpoints}
           >
@@ -583,7 +583,7 @@ const page = () => {
                         alt="hero_image"
                         width={940}
                         height={788}
-                        className="rounded-md"
+                        className="rounded-md tablet:w-[500px] h-[300px]"
                       />
                     </Link>
                   </motion.div>
@@ -594,14 +594,14 @@ const page = () => {
                     width={350}
                     // 1875 x 625
                     height={400}
-                    className="absolute z-10 hidden tablet:block bottom-0 left-[20px]"
+                    className="absolute w-[300px] h-[300px] z-10 hidden tablet:block bottom-0 left-[20px]"
                   />
                   <Image
                     src="/images/marketbg.png"
                     alt="hero_image"
                     width={103}
                     height={385}
-                    className="absolute   z-10 bottom-[30px] right-0"
+                    className="absolute  w-[300px] h-[150px]  z-10 bottom-[30px] right-0"
                   />
                   <motion.div
                     variants={textVariant2}
@@ -614,7 +614,7 @@ const page = () => {
                       alt="hero_image"
                       width={350}
                       height={200}
-                      className="absolute rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-0 right-0 "
+                      className="absolute w-[300px] h-[200px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-0 right-0 "
                     />{" "}
                   </motion.div>
                 </div>
@@ -624,7 +624,7 @@ const page = () => {
                     variants={textVariant4}
                     initial="hidden"
                     whileInView="show"
-                    className={`${work_san.className} font-thin uppercase   text-[28px]  leading-[28px] tablet:text-[38px]  tablet:leading-[40px] text-[#111]`}
+                    className={`${work_san.className} font-thin uppercase   text-[24px]  leading-[28px] tablet:text-[38px]  tablet:leading-[40px] text-[#111]`}
                   >
                     {t("webh2")}
                   </motion.h2>
@@ -697,7 +697,8 @@ const page = () => {
                         alt="hero_image"
                         width={940}
                         height={788}
-                        className="  rounded-md scale-y-[1.2] mt-[40px]"
+                        // className="  rounded-md scale-y-[1.2] mt-[40px]"
+                        className="rounded-md tablet:w-[500px] h-[400px]"
                       />{" "}
                     </Link>
                   </motion.div>
@@ -706,14 +707,14 @@ const page = () => {
                     alt="hero_image"
                     width={350}
                     height={400}
-                    className="absolute z-10 hidden tablet:block bottom-0 left-[20px]"
+                    className="absolute w-[300px] h-[300px] z-10 hidden tablet:block bottom-0 left-[20px]"
                   />
                   <Image
                     src="/images/marketbg.png"
                     alt="hero_image"
                     width={103}
                     height={385}
-                    className="absolute hidden tablet:block  z-10 bottom-[30px] right-0"
+                    className="absolute  w-[300px] h-[150px]  z-10 bottom-[30px] right-0"
                   />
                   <motion.div
                     variants={textVariant2}
@@ -726,7 +727,7 @@ const page = () => {
                       alt="hero_image"
                       width={350}
                       height={300}
-                      className="absolute h-[220px] mt-[-30px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-[-20px] right-0 "
+                      className="absolute w-[300px] h-[200px] rounded-sm  border-[8px] border-[#fafafa] z-50  hidden tablet:block bottom-[0px] tablet:bottom-0 right-0 "
                     />{" "}
                   </motion.div>
                 </div>
@@ -736,12 +737,12 @@ const page = () => {
                     variants={textVariant4}
                     initial="hidden"
                     whileInView="show"
-                    className={`${work_san.className} font-thin uppercase  text-[28px]  leading-[28px] tablet:text-[40px]  tablet:leading-[45px] text-[#111]`}
+                    className={`${work_san.className} font-thin uppercase   text-[24px]  leading-[28px] tablet:text-[38px]  tablet:leading-[40px] text-[#111]`}
                   >
                     {t("webh23")}
                   </motion.h2>
                   <Description
-                    className="py-4 leading-[25px] text-[16px] text-[#516469] "
+                    className="py-4 leading-[25px] text-[15px] text-[#516469] "
                     text={t("webh23des")}
                   />
 
@@ -1240,7 +1241,7 @@ const page = () => {
                   alt="contact"
                   width={800}
                   height={2000}
-                  className="w-[1000px] min-h-[600px] mr-[-400px]"
+                  className="w-[1000px] min-h-[600px] mr-[-500px] desktop:mr-[-400px]"
                 />
               </motion.div>
             </div>{" "}
